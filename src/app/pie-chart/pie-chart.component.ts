@@ -17,6 +17,15 @@ export class PieChartComponent {
 
   barChartOptions: ChartOptions = {
     responsive: true,
+    scales: {
+    
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 100,
+        }
+      }]
+    }
     
   };
   public records: any[] = [];  
